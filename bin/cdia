@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# Usage: cdia [file...]
+#
+
+require 'cdia'
+
+Cdia::Cdia.new.output
