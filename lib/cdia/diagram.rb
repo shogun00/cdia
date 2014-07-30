@@ -5,6 +5,8 @@ class Cdia::Diagram
   end
 
   def create_diagram_text
+    puts
+    puts '###### Diagram ######'
     @diagram.each do |hash|
       hash.each do |key, value|
         puts '+------------------------+'

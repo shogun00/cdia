@@ -6,13 +6,13 @@ class Cdia::Cdia
     end
     file_name = ARGV[0].chomp
     File.open(file_name) do |io|
-      @cdiag = Cdia::Parse.new(io)
-      @cdiag.parse
+      @cdia = Cdia::Parse.new(io)
+      @cdia.parse
     end
   end
 
   def output
-    Cdia::Diagram.new(@cdiag.code).create_diagram_text
+    Cdia::Diagram.new(@cdia.code).create_diagram_text
   end
 
 end

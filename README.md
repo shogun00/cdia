@@ -18,9 +18,36 @@ Or install it yourself as:
 
 ## Usage
 
+* Define classes and methods in one
+
+* [sample.rb]
+
+```ruby
+class Example
+  def method1
+  end
+
+  def method2(v1, v2, v3)
+  end
+end
 ```
 
+* run command `cdia <filename>`, then get class diagram
+
+```bash
+$ cdia sample.rb
+
+###### Diagram ######
++------------------------+
+| Example
++------------------------+
+| method1()
+| method2(v1,v2,v3)
++------------------------+
+
 ```
+
+
 
 ## Contributing
 
