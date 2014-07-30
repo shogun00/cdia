@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # Usage: cdia [file...]
 #
-
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'cdia'
 
-Cdia::Cdia.new.output
+Cdia::Cdiag.new.output

@@ -1,24 +1,25 @@
-class Cdia::Diagram
+module Cdia
+  class Diagram
 
-  def initialize(code)
-    @diagram = code
-  end
+    def initialize(code)
+      @diagram = code
+    end
 
-  def create_diagram_text
-    puts
-    puts '###### Diagram ######'
-    @diagram.each do |hash|
-      hash.each do |key, value|
-        puts '+------------------------+'
-        puts "| #{key}"
-        puts '+------------------------+'
-        value.each do |v|
-          puts "| #{v}"
-        end
-        puts '+------------------------+'
-      end
+    def create_diagram_text
       puts
+      puts '###### Diagram ######'
+      @diagram.each do |hash|
+        hash.each do |key, value|
+          puts '+------------------------+'
+          puts "| #{key}"
+          puts '+------------------------+'
+          value.each do |v|
+            puts "| #{v}"
+          end
+          puts '+------------------------+'
+        end
+        puts
+      end
     end
   end
 end
-

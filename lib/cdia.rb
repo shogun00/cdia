@@ -1,6 +1,6 @@
 require "cdia/parse"
 require "cdia/diagram"
-require "cdia/cdia"
+require "cdia/cdiag"
 require "cdia/version"
 
 
